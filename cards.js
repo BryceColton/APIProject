@@ -76,6 +76,7 @@ const deleteCard = (req, res) => {
 };
 
 function getNextCardId() {
+  console.log("I got currentID")
   const currentId = nextCardId;
   nextCardId += 1;
   return currentId;
