@@ -83,6 +83,7 @@ function getNextCardId() {
 }
 
 function readCardsFile() {
+  console.log("reading the file")
   const cardsFile = fs.readFileSync(cardsFilePath, 'utf-8');
   return JSON.parse(cardsFile);
 }
