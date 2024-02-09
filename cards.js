@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const jwt = require('jsonwebtoken');
+const cardsData = require('./data/cards.json')
 
 const cardsFilePath = path.join(__dirname, 'data', 'cards.json');
 let nextCardId = 1; // Assuming your initial card ID starts from 1
